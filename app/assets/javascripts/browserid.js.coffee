@@ -62,12 +62,12 @@
           data: { assertion: assertion }
           success: (data, status, xhr) => @onLogin(data, status, xhr)
           error: (xhr, status, err) => @onLoginError(xhr, status, err)
-      onlogout: =>
-        $.ajax
-          type: 'POST'
-          url: @logoutPath
-          success: (data, status, xhr) => @onLogout(data, status, xhr)
-          error: (xhr, status, err) => @onLogoutError(xhr, status, err)
+#      onlogout: =>
+#        $.ajax
+#          type: 'POST'
+#          url: @logoutPath
+#          success: (data, status, xhr) => @onLogout(data, status, xhr)
+#          error: (xhr, status, err) => @onLogoutError(xhr, status, err)
 
 
 
@@ -81,4 +81,4 @@ jQuery ->
 jQuery ->
   $('.browserid_logout').click ->
     navigator.id.logout()
-    false
+#    false
