@@ -62,7 +62,7 @@
           data: { assertion: assertion }
           success: (data, status, xhr) => @onLogin(data, status, xhr)
           error: (xhr, status, err) => @onLoginError(xhr, status, err)
-#      onlogout: =>
+      onlogout: =>
 #        $.ajax
 #          type: 'POST'
 #          url: @logoutPath
